@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context="com.example.buiderdream.programmercommunity.view.activity.EditActivity">
+    <RelativeLayout
+        android:id="@+id/rl_headBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorMain">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/img_description"
+            android:src="@mipmap/icon_back_64px" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/person_info"
+            android:textColor="#ffffff"
+
+            android:textSize="@dimen/title_font" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/rl_headBar"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/ivory"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:inputType="text"
+        android:labelFor="@+id/et_input"
+        android:background="@drawable/bg_verification"/>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_login_button"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/et_input"
+        android:layout_marginStart="28dp"
+        android:textSize="18sp"
+        android:textColor="@color/ivory"
+        android:text="@string/cancel"/>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_login_button"
+        android:layout_alignBaseline="@+id/btn_cancel"
+        android:layout_alignBottom="@+id/btn_cancel"
+        android:layout_alignEnd="@+id/et_input"
+        android:layout_marginEnd="28dp"
+        android:textSize="18sp"
+        android:textColor="@color/ivory"
+        android:text="@string/finish"/>
+
+</RelativeLayout>

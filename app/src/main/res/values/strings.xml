@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">猿圈</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="img_description">图片</string>
+    <string name="cancel">取消</string>
+    <string name="finish">完成</string>
+    <string name="welcome">打造猿友圈</string>
+    <!--添加主题页面-->
+    <string name="manger_theme">管理主题</string>
+    <string name="already_add_theme">已添加的主题</string>
+    <string name="exploit_language">开发语言</string>
+    <string name="technology_leading">技术前沿</string>
+    <!--文章详情页面-->
+    <string name="article_detail">文详详情</string>
+    <!--个人信息页面-->
+    <string name="person_info">个人信息</string>
+    <!--引导页-->
+    <string name="immediately_enter">立即体验</string>
+    <!--登录界面-->
+    <string name="login">登录</string>
+    <string name="password">请输入密码</string>
+    <string name="phone">请输入手机号</string>
+    <string name="register_user">注册用户</string>
+    <!--编辑用户信息页面-->
+    <string name="head_pic">头像</string>
+    <string name="user_name">用户名</string>
+    <string name="phone_number">手机号</string>
+    <string name="address">地址</string>
+    <string name="technology">热衷技术</string>
+    <string name="person_introduce">个人简介</string>
+    <!--注册页面-->
+    <string name="register">注册</string>
+    <string name="agree_user">同意用户</string>
+    <string name="protocol">许可协议</string>
+    <string name="certain_password">请确认密码</string>
+    <string name="verification_code">请输入验证码：</string>
+    <!--详情主题界面-->
+    <string name="browse">回复数：</string>
+
+    <!--dialog-->
+    <string name="take_photo">拍照</string>
+    <string name="photo_album">从相册选择</string>
+    <string name="empty">这里空空的</string>
+    <!--文章fragment-->
+    <string name="article_list">文章列表</string>
+    <!--我的fragment-->
+    <string name="person_center">个人中心</string>
+    <string name="user_no_login">用户未登录</string>
+    <string name="compile">编辑</string>
+    <string name="exit">退出</string>
+    <!--话题fragment-->
+    <string name="topic_list">话题列表</string>
+    <string name="more">点击加载更多</string>
+
+
+</resources>

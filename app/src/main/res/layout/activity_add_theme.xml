@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_theme_acitvity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.buiderdream.programmercommunity.view.activity.AddThemeActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_headTob"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorMain">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/img_description"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_back_64px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="@string/manger_theme"
+            android:textSize="@dimen/title_font" />
+        <ImageView
+            android:id="@+id/img_saveNewTheme"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/img_description"
+            android:src="@mipmap/icon_save_64px"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_defaultTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_headTob"
+        android:background="@color/colorAssistant"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/already_add_theme"
+        android:textSize="20sp" />
+
+    <GridView
+        android:id="@+id/gv_defaultTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_defaultTheme"
+        android:background="@color/cornsilk"
+        android:numColumns="4"/>
+    <GridLayout
+        android:id="@+id/gv_addTheme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/gv_defaultTheme"
+        android:layout_above="@+id/tv_developLanguage"
+        android:paddingTop="5dp"
+        android:background="@color/cornsilk"
+        />
+
+    <TextView
+        android:id="@+id/tv_developLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gv_developLanguage"
+        android:background="@color/colorAssistant"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="@string/exploit_language"
+        android:textSize="20sp" />
+
+    <GridView
+        android:id="@+id/gv_developLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_technology"
+        android:numColumns="4"
+        android:background="@color/cornsilk"/>
+
+    <GridView
+        android:id="@+id/gv_technology"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:numColumns="4"
+        android:background="@color/cornsilk"/>
+
+    <TextView
+        android:id="@+id/tv_technology"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAssistant"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="@string/technology_leading"
+        android:textSize="20sp"
+        android:layout_above="@+id/gv_technology"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

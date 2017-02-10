@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+ >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/ivory"
+            android:text="@string/cancel"
+            />
+        <TextView
+            android:id="@+id/btn_addFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/ivory"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/finish"
+           />
+    </RelativeLayout>
+
+    <com.example.buiderdream.programmercommunity.widgets.CityPicker
+        android:id="@+id/citypicker"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+</LinearLayout>
