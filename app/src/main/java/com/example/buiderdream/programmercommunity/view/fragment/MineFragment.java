@@ -108,9 +108,10 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
 
                     @Override
                     public void onLoadingComplete(String s, View view, Bitmap bitmap) {
-                        img_userHeadMax.setImageBitmap(bitmap);
-                        img_userHead.setImageBitmap(bitmap);
-
+                        if (bitmap!=null){
+                            img_userHeadMax.setImageBitmap(bitmap);
+                            img_userHead.setImageBitmap(bitmap);
+                        }
                     }
 
                     @Override

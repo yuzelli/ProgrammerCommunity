@@ -67,6 +67,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
                 agreedProtocol = b;
             }
         });
+        tv_protocol.setOnClickListener(this);
     }
 
     /**
@@ -86,6 +87,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
                 doRegisterUser();
                 break;
             case R.id.tv_protocol:
+                ProtocolActivity.actionStart(this);
                 break;
             default:
                 break;

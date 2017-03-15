@@ -132,7 +132,10 @@ public class ArticleFragment extends BaseFragment implements View.OnTouchListene
 
                 @Override
                 public void onLoadingComplete(String s, View view, Bitmap bitmap) {
-                    img_userHead.setImageBitmap(bitmap);
+                    if (bitmap!=null){
+                        img_userHead.setImageBitmap(bitmap);
+                    }
+
 
                 }
 
@@ -260,8 +263,8 @@ public class ArticleFragment extends BaseFragment implements View.OnTouchListene
         @Override
         public void run() {
             if (System.currentTimeMillis() - lastTime >= 3000) {
-                currentIndex++;
                 vp_picture.setCurrentItem(currentIndex);
+                currentIndex++;
                 lastTime = System.currentTimeMillis();
             }
             handler.postDelayed(runnableForBanner, 3000);

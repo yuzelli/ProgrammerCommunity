@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-    <android.support.v4.widget.SwipeRefreshLayout
+    <com.example.buiderdream.programmercommunity.widgets.SimpleSwipeRefreshLayout
         android:id="@+id/sr_refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -11,9 +11,9 @@
         android:id="@+id/lv_article"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-        <include
-            android:id="@+id/emptyView"
-            layout="@layout/empty_view" />
-    </android.support.v4.widget.SwipeRefreshLayout>
 
+    </com.example.buiderdream.programmercommunity.widgets.SimpleSwipeRefreshLayout>
+    <include
+        android:id="@+id/emptyView"
+        layout="@layout/empty_view" />
 </RelativeLayout>

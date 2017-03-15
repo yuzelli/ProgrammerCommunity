@@ -68,7 +68,7 @@ public class ConstantUtils
     //登录用户信息
     public static final String USER_LOGIN_INFO = "UserInfo";
     //自己的后台
-    public static final String USER_ADDRESS = "http://192.168.21.157:8080/CPbackstageService/";
+    public static final String USER_ADDRESS = "http://130.0.1.18:8080/CPbackstageService/";
     //用户操作
     public static final String USER_REGISTER = "userServlet";
     //主题

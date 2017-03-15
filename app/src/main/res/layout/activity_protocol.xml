@@ -6,5 +6,41 @@
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.buiderdream.programmercommunity.view.activity.ProtocolActivity">
+    <RelativeLayout
+        android:id="@+id/rl_headBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorMain">
 
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="@string/img_description"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@mipmap/icon_back_64px" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/protocoltext"
+            android:textSize="@dimen/title_font"
+            android:layout_centerInParent="true"
+            />
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_headBar"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="1、猿圈运用自己的系统，通过互联网络等方式为用户提供各项等网络服务。用户通过完成注册程序并点击“同意注册协议，提交注册”的按钮，即表示用户与猿圈达成协议，接受所有的猿圈网用户注册协议并愿意遵照执行。
+\n2、用户必须自行准备如下设备和承担如下开支：（1）上网设备，包括并不限于电脑或者其他上网终端、调制解调器及其他上网装置；（2）上网开支，包括并不限于网络接入费、上网设备租用费、手机流量费等。
+\n3、用户提供的注册资料，用户同意：（1）提供合法、真实、准确、详尽的个人资料；（2）如有变动，及时更新会员资料。如果用户提供的注册资料不合法、不真实、不准确、不详尽的，用户需承担因此引起的相应责任及后果，并且猿圈保留终止用户使用猿圈各项服务的权利。
+" />
 </RelativeLayout>

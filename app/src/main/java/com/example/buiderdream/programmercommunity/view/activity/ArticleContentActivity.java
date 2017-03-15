@@ -149,18 +149,14 @@ public class ArticleContentActivity extends BaseActivity implements View.OnClick
         map.put("a_title",title);
         map.put("a_imgurl",imgURL);
 
-
         String url = OkHttpClientManager.attachHttpGetParams(buffer.toString(),map);
-
         manager.getAsync(url, new OkHttpClientManager.DataCallBack() {
             @Override
             public void requestFailure(Request request, IOException e) {
                 Toast.makeText(context,"加载网路数据失败！",Toast.LENGTH_SHORT).show();
             }
-
             @Override
             public void requestSuccess(String result) throws Exception {
-
                 JSONObject object = new JSONObject(result);
                 article_ID = object.getString("articleID");
                 handler.sendEmptyMessage(ConstantUtils.ARTICLE_UP_DATA);

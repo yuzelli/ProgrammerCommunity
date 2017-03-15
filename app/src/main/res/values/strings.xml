@@ -52,6 +52,7 @@
     <!--话题fragment-->
     <string name="topic_list">话题列表</string>
     <string name="more">点击加载更多</string>
+    <string name="protocoltext">用户协议</string>
 
 
 </resources>
